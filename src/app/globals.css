@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f7f7f4;
+  --foreground: #26251e;
+  --primary: #f54e00;
+  --primary-active: #d04200;
+  --canvas: #f7f7f4;
+  --canvas-soft: #fafaf7;
+  --surface-card: #ffffff;
+  --surface-strong: #e6e5e0;
+  --hairline: #e6e5e0;
+  --hairline-soft: #efeee8;
+  --hairline-strong: #cfcdc4;
+  --ink: #26251e;
+  --body: #5a5852;
+  --muted: #807d72;
+  --muted-soft: #a09c92;
+  --timeline-thinking: #dfa88f;
+  --timeline-grep: #9fc9a2;
+  --timeline-read: #9fbbe0;
+  --timeline-edit: #c0a8dd;
+  --timeline-done: #c08532;
+  --semantic-success: #1f8a65;
+  --semantic-error: #cf2d56;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+button,
+select,
+input {
+  font: inherit;
+}
+
+::selection {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+[class~="bg-[var(--canvas)]"] {
+  background-color: var(--canvas);
+}
+
+[class~="bg-[var(--canvas-soft)]"] {
+  background-color: var(--canvas-soft);
+}
+
+[class~="bg-[var(--surface-card)]"] {
+  background-color: var(--surface-card);
+}
+
+[class~="bg-[var(--surface-strong)]"] {
+  background-color: var(--surface-strong);
+}
+
+[class~="bg-[var(--primary)]"] {
+  background-color: var(--primary);
+}
+
+[class~="bg-[var(--ink)]"] {
+  background-color: var(--ink);
+}
+
+[class~="bg-[var(--timeline-read)]"] {
+  background-color: var(--timeline-read);
+}
+
+[class~="bg-[var(--timeline-grep)]"] {
+  background-color: var(--timeline-grep);
+}
+
+[class~="bg-[var(--timeline-edit)]"] {
+  background-color: var(--timeline-edit);
+}
+
+[class~="bg-[var(--timeline-done)]"] {
+  background-color: var(--timeline-done);
+}
+
+[class~="bg-[#fff1f3]"] {
+  background-color: #fff1f3;
+}
+
+[class~="bg-[#fff4eb]"] {
+  background-color: #fff4eb;
+}
+
+[class~="bg-[#ecf7f2]"] {
+  background-color: #ecf7f2;
+}
+
+[class~="text-[var(--ink)]"] {
+  color: var(--ink);
+}
+
+[class~="text-[var(--canvas)]"] {
+  color: var(--canvas);
+}
+
+[class~="text-[var(--body)]"] {
+  color: var(--body);
+}
+
+[class~="text-[var(--muted)]"] {
+  color: var(--muted);
+}
+
+[class~="text-[var(--primary)]"] {
+  color: var(--primary);
+}
+
+[class~="text-[var(--semantic-success)]"] {
+  color: var(--semantic-success);
+}
+
+[class~="text-[var(--semantic-error)]"] {
+  color: var(--semantic-error);
+}
+
+[class~="border-[var(--hairline)]"] {
+  border-color: var(--hairline);
+}
+
+[class~="border-[var(--hairline-soft)]"] {
+  border-color: var(--hairline-soft);
+}
+
+[class~="border-[var(--hairline-strong)]"] {
+  border-color: var(--hairline-strong);
+}
+
+[class~="divide-[var(--hairline-soft)]"] > :not(:last-child) {
+  border-color: var(--hairline-soft);
+}
